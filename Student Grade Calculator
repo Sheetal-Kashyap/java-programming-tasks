@@ -1,4 +1,4 @@
- import java.util.*;
+ import java.util.Scanner;
 
 public class Student_Grade_Calculator
 {
@@ -9,7 +9,7 @@ public class Student_Grade_Calculator
         int nS=sc.nextInt();
         int total=0;
         for(int i=0; i<nS;i++){
-            System.out.println("Enter marks obtaine in"+i+": ");
+            System.out.println("Enter marks obtained in"+(i+1)": ");
             int marks=sc.nextInt();
             total +=marks;
         }
@@ -28,12 +28,11 @@ public class Student_Grade_Calculator
             Grade='C';
 }
         else if(averP>=50){
-            Grade='C';
+            Grade='D';
         }
         else if(averP>=40){
-            Grade='D';
-        } else if (averP >= 30) {
-            Grade = 'E';
+            Grade='E';
+        
         } else {
 
             Grade = 'F';
